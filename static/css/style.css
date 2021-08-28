@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+html, * {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    
+}
+section.songs {
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+section#keys {
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+div.note {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 200px;
+    border: 1px solid  black;
+}
+
+audio {
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    section#keys {
+        width: 100%;
+        padding: 10px;
+    }
+    div.note {
+        max-width: 12%;
+    }
+}
